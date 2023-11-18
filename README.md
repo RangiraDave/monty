@@ -1,5 +1,5 @@
-** monty **
-# This repository contains tasks for Stacks, Queues - LIFO, FIFO project.
+# monty 
+## This repository contains tasks for Stacks, Queues - LIFO, FIFO project.
 
 Data structures
 
