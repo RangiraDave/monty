@@ -18,7 +18,7 @@ int _parser_in(char **space_free, unsigned int *counter, my_stack_t **stack)
 
 	instruction_t instruction_set[] = {
 		{"pall", pall},
-/*		{"pint", pint},
+		{"pint", pint},
 		{"pop", pop},
 		{"swap", swap},
 		{"add", add},
@@ -26,9 +26,9 @@ int _parser_in(char **space_free, unsigned int *counter, my_stack_t **stack)
 		{"pchar", pchar},
 		{"pstr", pstr},
 		{"sub", sub},
-		{"div", divide},
+		{"div", divi},
 		{"mul", mul},
-		{"mod", mod},*/
+		{"mod", mod},
 	};
 
 	if (strcmp(opcode, "push") == 0)

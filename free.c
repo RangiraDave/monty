@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * free - Function to free a stack once.
+ * free_s - Function to free a stack once.
  * @stack: A pointer to the head of the stack.
  *
  * Return: Nothing.

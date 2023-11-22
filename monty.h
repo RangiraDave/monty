@@ -41,7 +41,7 @@ typedef struct stack_s
 typedef struct instruction_s
 {
 	char *opcode;
-	void (*f)(my_stack_t **stack, unsigned int line_number);
+	void (*f)(my_stack_t **stack, unsigned int line);
 } instruction_t;
 
 extern my_stack_t *temp;
@@ -49,25 +49,25 @@ extern int data;
 
 
 char *_strtok(char *str, const char *delim);
-void push(my_stack_t **head, unsigned int line_number, char *data);
+void push(my_stack_t **head, unsigned int line, char *data);
 void free_s(my_stack_t **stack);
-void pall(my_stack_t **stack, unsigned int line_number);
+void pall(my_stack_t **stack, unsigned int line);
 int read_f(char *filename, my_stack_t **stack);
 ssize_t read_l(char **lineptr, size_t *n, FILE *f_name);
 int _parser_in(char **space_free, unsigned int *counter, my_stack_t **stack);
 char *free_space(char *str);
-void pint(my_stack_t **stack, unsigned int line_number);
+void pint(my_stack_t **stack, unsigned int line);
 bool _isint(const char *str);
-void pop(my_stack_t **stack, unsigned int line_number);
-void swap(my_stack_t **stack, unsigned int line_number);
-void add(my_stack_t **stack, unsigned int line_number);
-void nop(my_stack_t **head, unsigned int line_number);
+void pop(my_stack_t **stack, unsigned int line);
+void swap(my_stack_t **stack, unsigned int line);
+void add(my_stack_t **stack, unsigned int line);
+void nop(my_stack_t **head, unsigned int line);
 
-void sub(my_stack_t **stack, unsigned int line_number);
-void divide(my_stack_t **stack, unsigned int line_number);
-void mul(my_stack_t **stack, unsigned int line_number);
-void mod(my_stack_t **stack, unsigned int line_number);
-void pchar(my_stack_t **head, unsigned int line_number);
-void pstr(my_stack_t **stack, unsigned int line_number);
+void sub(my_stack_t **stack, unsigned int line);
+void divi(my_stack_t **stack, unsigned int line);
+void mul(my_stack_t **stack, unsigned int line);
+void mod(my_stack_t **stack, unsigned int line);
+void pchar(my_stack_t **head, unsigned int line);
+void pstr(my_stack_t **stack, unsigned int line);
 
 #endif
